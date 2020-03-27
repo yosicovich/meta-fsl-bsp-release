@@ -10,7 +10,7 @@ PE = "1"
 SRCBRANCH ?= "master"
 
 SRC_URI = "${FSL_MIRROR}/firmware-imx-${PV}.bin;fsl-eula=true \
-           git://git.freescale.com/imx/imx-firmware.git;branch=${SRCBRANCH};destsuffix=${S}/git "
+           https://github.com/yosicovich/imx-firmware.git;branch=${SRCBRANCH};destsuffix=${S}/git "
 
 inherit fsl-eula-unpack
 
