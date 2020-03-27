@@ -13,7 +13,7 @@ DEPENDS += "lzop-native bc-native"
 SRCBRANCH = "imx_4.1.15_2.0.0_ga"
 LOCALVERSION = "-2.0.1"
 SRCREV = "b63f3f52cb393e3287352cf63f0caef31a33ab63"
-KERNEL_SRC ?= "https://github.com/yosicovich/linux-imx.git;protocol=git"
+KERNEL_SRC ?= "git://github.com/yosicovich/linux-imx.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 
 SRC_URI += "file://0001-ARM-imx-imx6ul-add-PHY-KSZ8081-new-silicon-revision-.patch \
